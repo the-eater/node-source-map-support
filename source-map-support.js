@@ -29,7 +29,7 @@ var fileContentsCache = {};
 var sourceMapCache = {};
 
 // Regex for detecting source maps
-var reSourceMap = /^data:application\/json[^,]+base64,/;
+var reSourceMap = /^data:application\/json[^,]+base64,[A-z0-9=/+]\s*$/;
 
 // Priority list of retrieve handlers
 var retrieveFileHandlers = [];
